@@ -1,52 +1,33 @@
 # Claude's reply (with skill)
 
-> Prompt: "Generate 500 fake e-commerce orders with users and products. Save the files in this folder."
+> Prompt: "Make me 20 fake users for testing. Save them as a CSV in this folder."
 
-I generated 500 fake orders, along with the users, products and order line items behind them, as four CSV files in a `data/` folder here. A separate check script found 0 errors: every order points to a real user, every line item to a real order and product, and all the money columns add up.
+I saved 20 fake users to `users.csv` in this folder. A small script makes them, so you can rebuild the same file any time. I ran it and checked the output: there are 20 rows, the IDs run 1–20, everyone was at least 18 at signup, no signup is later than today, and free-plan users all have $0 spend.
 
-| File | Rows | What's in it |
-|---|---|---|
-| `data/orders.csv` | 500 | Order header: id, user_id, order_date, status, payment_method, shipping_country, item_count, subtotal, discount, shipping_fee, total, note |
-| `data/order_items.csv` | 999 | One row per product in an order: id, order_id, product_id, quantity, unit_price, line_total |
-| `data/users.csv` | 200 | id, first_name, last_name, email, phone, country, city, signup_date, status |
-| `data/products.csv` | 80 | id, sku, name, category, unit_price, stock_qty, is_active |
-
-**How the numbers fit together**
-- Each line item's total is quantity × unit price.
-- Each order's subtotal is the sum of its line items, and total = subtotal − discount + shipping.
-- No order is dated before its user signed up, and no IDs repeat.
-- 156 of the 200 users placed orders.
-
-**To make it look like real shop data:**
-- **Prices:** product prices vary by category and are skewed (many cheap items, a few expensive ones); 70% of them end in .99.
-- **Buyers:** a few people buy a lot and most buy once or twice. The top buyer has 28 orders.
-- **Orders:** 63% delivered, 16% shipped, 10% cancelled, 8% processing, 3% refunded. Most orders have one item and quantity 1, and evenings are the busiest hours.
-- **Order totals:** median $69.02, ranging from $4.99 to $1,288.51.
-- **Discounts and shipping:** 25% of orders get a 5–25% discount, and shipping is free over $50.
-
-**Deliberate oddities (about 5% of rows, never in IDs)**
-- Missing values: an empty cell means blank text, and the word `NULL` means no value.
-- Accented and non-Latin names (José Ñúñez, 李小龙, Анна Иванова) and emoji in names and order notes.
-- 255-character names and notes.
-- Unusual products: one priced $0.00, one at $99,999.99, one with stock of −5 and one with 1,000,000.
-- Records with the same name but different IDs.
-
-**Preview (`orders.csv`)**
+**Data card**
 ```
-id,user_id,order_date,status,payment_method,shipping_country,item_count,subtotal,discount,shipping_fee,total,note
-1,190,2025-01-21 17:09:06,cancelled,credit_card,US,1,14.99,0.00,4.99,19.98,NULL
-2,161,2024-11-28 18:02:13,cancelled,credit_card,JP,3,507.00,0.00,0.00,507.00,Call on arrival
-3,109,2026-07-08 20:08:07,shipped,credit_card,CA,1,169.90,33.98,0.00,135.92,NULL
-4,28,2024-05-17 10:41:28,delivered,credit_card,CA,3,75.47,0.00,0.00,75.47,NULL
-5,76,2025-07-30 10:17:28,delivered,gift_card,DE,4,214.59,21.46,0.00,193.13,NULL
+File:        users.csv
+Rows:        20   (seed 42)
+Columns:     id, first_name, last_name, email, phone, date_of_birth,
+             signup_date, country, plan, status, monthly_spend
+Edge cases:  4 rows (ids 5, 6, 14, 15): empty first_name/email/phone,
+             unicode name "José Ñúñez 李小龙 😀", 255-char last_name,
+             monthly_spend = 99999.99, and a duplicate name with a
+             different id and email
+Regenerate:  python3 scripts/generate_users.py --rows 20 --seed 42
 ```
 
-The data comes from a script that uses a fixed seed, so it should give the same files every time, but I didn't run it twice to confirm. To regenerate and re-check:
-```
-python3 scripts/generate_ecommerce.py --rows 500 --seed 42
-python3 scripts/validate_ecommerce.py
-```
-`--rows` sets the number of orders, and `--users` / `--products` change those counts. Files are in:
-- `data/`
-- `scripts/generate_ecommerce.py`
-- `scripts/validate_ecommerce.py`
+**Preview (first 5 rows)**
+
+| id | first_name | last_name | email | phone | dob | signup | country | plan | status | spend |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Priya | Smith | priya.smith1@example.net | +1-555-0111 | 1991-09-16 | 2026-02-17 | CA | free | active | 0.00 |
+| 2 | Wei | Brown | wei.brown2@example.net | +1-555-0128 | 1999-07-28 | 2024-10-31 | US | pro | active | 16.10 |
+| 3 | James | Khan | james.khan3@example.com | +1-555-0197 | 1996-12-02 | 2024-05-15 | US | free | active | 0.00 |
+| 4 | Priya | Nguyen | priya.nguyen4@example.com | +1-555-0148 | 1982-11-06 | 2026-02-03 | US | free | active | 0.00 |
+| 5 | *(empty)* | Nguyen | *(empty)* | *(empty)* | 2003-02-01 | 2023-01-29 | BR | pro | active | 38.21 |
+
+- **Safe contact details:** emails use domains reserved for testing (`example.com`, `.org`, `.net`), and phone numbers are in the fictional 555-01xx range. None of them can reach a real person.
+- **Edge-case rows:** 4 of the 20 rows (20%) are deliberately odd, which is more than the usual ~5%. With only 20 users, that's the only way to fit in one row of each type. If you want only clean rows, remove the `inject_edge_cases` call from the script.
+
+The script is in `scripts/generate_users.py`, and `--rows` and `--seed` change how many users you get and which ones.

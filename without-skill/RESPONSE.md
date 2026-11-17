@@ -1,22 +1,18 @@
 # Claude's reply (without skill)
 
-> Prompt: "Generate 500 fake e-commerce orders with users and products. Save the files in this folder."
+> Prompt: "Make me 20 fake users for testing. Save them as a CSV in this folder."
 
-I generated 500 fake orders, along with the users and products they refer to, as four linked CSV files in this folder:
+I saved 20 fake users to `fake_users.csv` in this folder.
 
-| File | Rows | Contents |
-|---|---|---|
-| `users.csv` | 150 | Name, email, phone, address, signup date |
-| `products.csv` | 80 | SKU, name, category (7 kinds), price, cost, stock, rating |
-| `orders.csv` | 500 | Order number, user, date, status, payment method, subtotal, discount, shipping, tax, total, shipped and delivered dates |
-| `order_items.csv` | 988 | The line items in each order: product, quantity, unit price, line total |
+**Columns:** `id`, `first_name`, `last_name`, `username`, `email`, `phone`, `date_of_birth`, `city`, `country`, `signup_date`, `is_active`
 
-I checked the output: every user and product ID in the orders and line items points to a real row, and each order's subtotal equals the sum of its line items.
+**Safety:**
+- All emails use `example.com`, `example.org` or `example.net`. These domains are reserved for testing, so messages sent to them won't reach anyone.
+- All phone numbers are in the `+1-555-01xx` range, which is reserved for fictional use.
 
-- **Dates:** orders cover Nov 19, 2025 to Nov 16, 2026. Order IDs go up in date order, and no order is dated before its user signed up.
-- **Status:** about 68% of orders are delivered; the rest are shipped, processing, pending, cancelled or returned. Orders from the last few days are never marked delivered, and shipped/delivered dates are only filled in where the status calls for them.
-- **Realism:** some users order much more often than others (137 of the 150 placed at least one order), and some products sell much more than others.
-- **Pricing:** about 20% of orders get a 10–20% discount, shipping is free on orders of $50 or more, and tax is 8%. Total revenue is about $118.8k.
-- **Fake contact details:** emails use reserved test domains such as `example.com`, and phone numbers use the 555 prefix, so none of them belong to real people.
+**Useful for testing:**
+- Names come from many countries, and one includes an apostrophe (`O'Connell`) to test quoting and escaping.
+- Four users have `is_active` set to `false` (ids 4, 8, 13, 18).
+- Dates are in ISO format (`YYYY-MM-DD`). Birth dates run from 1978 to 2000, and sign-up dates from January 2024 to January 2025.
 
-I also saved the script that made the files, `generate.py`. It only uses Python's standard library, and the same seed always gives the same data. To make a different amount, run for example `python3 generate.py --orders 2000 --users 400 --seed 7`.
+I can add more rows, add fields like address, role, password hash or UUIDs, or put in deliberately bad data (missing fields, invalid emails, duplicates) to test validation.

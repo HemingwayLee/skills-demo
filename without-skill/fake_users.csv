@@ -1,0 +1,21 @@
+id,first_name,last_name,username,email,phone,date_of_birth,city,country,signup_date,is_active
+1,Avery,Thornton,avery.thornton,avery.thornton@example.com,+1-555-0101,1990-03-14,Portland,USA,2024-01-08,true
+2,Mateo,Alvarez,mateo_alvarez,mateo.alvarez@example.com,+1-555-0102,1985-07-22,Austin,USA,2024-02-17,true
+3,Priya,Raman,priya.r,priya.raman@example.org,+1-555-0103,1993-11-05,Toronto,Canada,2024-03-02,true
+4,Liam,O'Connell,liamoc,liam.oconnell@example.net,+1-555-0104,1978-01-30,Dublin,Ireland,2024-03-19,false
+5,Sofia,Bianchi,sofiab,sofia.bianchi@example.com,+1-555-0105,1999-06-11,Milan,Italy,2024-04-04,true
+6,Kenji,Watanabe,kwatanabe,kenji.watanabe@example.com,+1-555-0106,1988-09-27,Osaka,Japan,2024-04-21,true
+7,Amara,Okafor,amara.okafor,amara.okafor@example.org,+1-555-0107,1995-02-08,Lagos,Nigeria,2024-05-10,true
+8,Noah,Fischer,noahf,noah.fischer@example.com,+1-555-0108,1982-12-03,Berlin,Germany,2024-05-28,false
+9,Isabella,Costa,isa.costa,isabella.costa@example.net,+1-555-0109,2000-04-19,Lisbon,Portugal,2024-06-15,true
+10,Ethan,Nguyen,ethan.nguyen,ethan.nguyen@example.com,+1-555-0110,1991-08-25,Seattle,USA,2024-07-01,true
+11,Chloe,Dubois,chloe_d,chloe.dubois@example.org,+1-555-0111,1987-10-12,Lyon,France,2024-07-20,true
+12,Omar,Haddad,omar.haddad,omar.haddad@example.com,+1-555-0112,1984-05-06,Amman,Jordan,2024-08-09,true
+13,Hannah,Kowalski,hkowalski,hannah.kowalski@example.net,+1-555-0113,1996-01-23,Krakow,Poland,2024-08-30,false
+14,Lucas,Silva,lucas.silva,lucas.silva@example.com,+1-555-0114,1992-03-29,Sao Paulo,Brazil,2024-09-14,true
+15,Maya,Patel,mayap,maya.patel@example.org,+1-555-0115,1998-07-16,Leicester,UK,2024-10-03,true
+16,Oliver,Jensen,oliver.j,oliver.jensen@example.com,+1-555-0116,1980-11-21,Copenhagen,Denmark,2024-10-22,true
+17,Zara,Ahmed,zara.ahmed,zara.ahmed@example.net,+1-555-0117,1994-09-02,Dubai,UAE,2024-11-11,true
+18,Daniel,Kim,dkim,daniel.kim@example.com,+1-555-0118,1989-02-14,Seoul,South Korea,2024-12-01,false
+19,Elena,Petrova,elena.p,elena.petrova@example.org,+1-555-0119,1997-12-28,Sofia,Bulgaria,2025-01-07,true
+20,Jack,Morrison,jack.morrison,jack.morrison@example.com,+1-555-0120,1983-06-09,Melbourne,Australia,2025-01-26,true
