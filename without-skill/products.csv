@@ -1,0 +1,81 @@
+product_id,sku,name,category,price,cost,stock_quantity,rating,created_at
+1,BEA-00001,Lumen Premium Face Moisturizer,Beauty,53.95,21.55,179,3.3,2023-01-14
+2,BOO-00002,Vertex Eco Travel Guide,Books,33.64,12.77,286,3.4,2024-11-15
+3,TOY-00003,Lumen Everyday Building Blocks,Toys,53.87,26.84,185,2.5,2024-12-25
+4,HOM-00004,Brightway Premium Storage Bins,Home & Kitchen,35.07,24.55,79,2.7,2026-02-23
+5,BEA-00005,Nimbus Everyday Face Moisturizer,Beauty,60.60,39.80,316,2.8,2024-08-08
+6,HOM-00006,Lumen Eco Dish Rack,Home & Kitchen,122.08,49.80,224,2.6,2024-09-02
+7,BOO-00007,Brightway Ultra Travel Guide,Books,17.11,10.47,229,3.1,2025-05-17
+8,CLO-00008,Summit Deluxe Rain Jacket,Clothing,90.72,49.86,225,3.7,2025-02-18
+9,TOY-00009,Vertex Everyday Board Game,Toys,37.72,15.34,102,4.5,2025-12-09
+10,TOY-00010,Kestrel Classic Art Kit,Toys,42.12,20.21,478,2.8,2023-10-28
+11,TOY-00011,Acme Essential Building Blocks,Toys,62.18,27.70,463,3.8,2024-04-06
+12,ELE-00012,Brightway Ultra Mechanical Keyboard,Electronics,278.84,138.09,202,3.8,2025-05-24
+13,SPO-00013,Acme Premium Camping Lantern,Sports & Outdoors,12.41,8.39,429,4.3,2024-11-01
+14,TOY-00014,Lumen Eco Building Blocks,Toys,28.37,18.17,356,4.6,2024-02-01
+15,SPO-00015,Harbor Classic Water Bottle,Sports & Outdoors,10.65,4.53,76,3.9,2023-04-21
+16,BEA-00016,Vertex Pro Body Wash,Beauty,29.20,13.30,24,3.1,2023-02-18
+17,TOY-00017,Harbor Ultra Building Blocks,Toys,15.87,10.58,305,3.8,2023-03-04
+18,BEA-00018,Harbor Deluxe Makeup Brush Set,Beauty,17.06,8.53,314,3.4,2023-07-08
+19,SPO-00019,Lumen Pro Jump Rope,Sports & Outdoors,19.99,10.68,259,4.5,2023-11-14
+20,BEA-00020,Northwind Compact Body Wash,Beauty,44.49,25.47,191,3.1,2026-08-16
+21,CLO-00021,Acme Premium Running Shorts,Clothing,97.22,55.40,395,4.0,2024-11-07
+22,HOM-00022,Northwind Premium Blender,Home & Kitchen,55.74,32.05,425,4.4,2024-02-10
+23,BOO-00023,Summit Eco History Biography,Books,11.26,6.76,483,3.6,2025-01-26
+24,HOM-00024,Northwind Deluxe French Press,Home & Kitchen,52.50,24.07,203,5.0,2023-09-02
+25,SPO-00025,Kestrel Classic Camping Lantern,Sports & Outdoors,61.93,40.36,24,4.7,2024-11-08
+26,CLO-00026,Acme Premium Baseball Cap,Clothing,115.85,70.69,458,4.9,2024-10-24
+27,HOM-00027,Summit Ultra Throw Pillow,Home & Kitchen,138.33,73.56,410,2.7,2024-05-02
+28,ELE-00028,Vertex Lite USB-C Charger,Electronics,167.19,77.31,40,3.3,2025-01-21
+29,CLO-00029,Summit Lite Baseball Cap,Clothing,29.83,15.08,228,2.6,2024-09-26
+30,BEA-00030,Vertex Essential Makeup Brush Set,Beauty,87.32,59.53,38,4.2,2024-06-09
+31,CLO-00031,Nimbus Eco Cotton T-Shirt,Clothing,26.99,15.19,400,3.6,2026-01-03
+32,ELE-00032,Brightway Premium Mechanical Keyboard,Electronics,120.03,65.84,309,2.9,2024-03-11
+33,CLO-00033,Oakline Ultra Hoodie,Clothing,78.30,41.91,203,3.3,2025-02-25
+34,HOM-00034,Acme Classic Cutting Board,Home & Kitchen,78.37,38.04,287,2.8,2025-04-03
+35,BOO-00035,Summit Deluxe Travel Guide,Books,17.14,11.50,251,3.0,2025-12-15
+36,TOY-00036,Acme Ultra Puzzle 1000pc,Toys,71.81,36.32,44,4.5,2024-12-03
+37,BOO-00037,Oakline Pro Travel Guide,Books,27.14,17.97,435,2.9,2023-02-20
+38,HOM-00038,Oakline Everyday Non-Stick Pan,Home & Kitchen,25.11,10.55,71,3.1,2023-12-12
+39,ELE-00039,Oakline Everyday Phone Case,Electronics,115.98,73.22,282,2.8,2026-03-26
+40,ELE-00040,Kestrel Compact HDMI Cable,Electronics,217.47,116.13,393,3.5,2023-06-29
+41,ELE-00041,Lumen Premium Tablet Stand,Electronics,30.51,15.65,264,3.4,2023-08-16
+42,BOO-00042,Harbor Eco History Biography,Books,43.68,21.90,466,4.7,2026-01-07
+43,BEA-00043,Lumen Essential Lip Balm,Beauty,18.61,12.60,115,3.4,2023-10-22
+44,CLO-00044,Acme Essential Running Shorts,Clothing,85.57,46.45,64,4.1,2023-04-09
+45,BEA-00045,Acme Everyday Makeup Brush Set,Beauty,19.17,13.03,78,2.9,2023-03-20
+46,BOO-00046,Harbor Premium History Biography,Books,42.03,15.32,442,2.6,2026-06-17
+47,BOO-00047,Harbor Essential Children's Picture Book,Books,14.22,7.82,316,4.1,2023-12-04
+48,BOO-00048,Nimbus Essential Children's Picture Book,Books,43.31,22.48,412,4.5,2024-06-09
+49,CLO-00049,Summit Pro Cotton T-Shirt,Clothing,28.81,14.27,237,3.0,2023-04-25
+50,HOM-00050,Oakline Premium Throw Pillow,Home & Kitchen,145.53,57.60,189,3.8,2026-02-13
+51,CLO-00051,Brightway Ultra Hoodie,Clothing,41.83,18.27,49,2.6,2024-07-24
+52,TOY-00052,Harbor Compact Puzzle 1000pc,Toys,76.35,50.83,416,3.3,2023-06-23
+53,BOO-00053,Oakline Deluxe History Biography,Books,12.21,8.53,239,3.7,2024-12-26
+54,SPO-00054,Northwind Pro Dumbbell Set,Sports & Outdoors,104.05,71.62,110,4.0,2026-06-11
+55,ELE-00055,Kestrel Ultra Phone Case,Electronics,264.88,153.36,240,3.2,2026-09-02
+56,TOY-00056,Acme Compact Puzzle 1000pc,Toys,70.65,42.72,391,3.5,2026-06-18
+57,SPO-00057,Northwind Lite Camping Lantern,Sports & Outdoors,76.60,34.55,197,3.8,2023-08-19
+58,CLO-00058,Harbor Lite Hoodie,Clothing,25.31,9.71,191,4.5,2024-10-24
+59,BEA-00059,Oakline Eco Lip Balm,Beauty,55.61,27.28,20,2.6,2025-12-12
+60,BOO-00060,Oakline Ultra Travel Guide,Books,23.82,13.39,263,2.8,2023-04-12
+61,CLO-00061,Lumen Compact Wool Socks,Clothing,80.65,42.55,260,3.8,2023-07-24
+62,CLO-00062,Summit Classic Rain Jacket,Clothing,49.42,19.19,213,4.0,2023-03-10
+63,ELE-00063,Harbor Ultra Webcam,Electronics,289.45,180.62,397,3.9,2025-06-09
+64,BOO-00064,Northwind Lite Self-Help Guide,Books,12.65,7.21,317,4.4,2024-08-01
+65,HOM-00065,Brightway Classic Dish Rack,Home & Kitchen,141.70,55.05,9,3.6,2024-05-14
+66,HOM-00066,Vertex Deluxe Scented Candle,Home & Kitchen,78.76,44.42,241,4.7,2026-05-14
+67,BOO-00067,Lumen Everyday Cookbook,Books,27.87,19.49,244,3.8,2024-12-15
+68,HOM-00068,Summit Everyday Throw Pillow,Home & Kitchen,85.02,49.87,444,4.3,2023-02-09
+69,TOY-00069,Kestrel Lite RC Car,Toys,21.65,9.45,285,3.2,2025-01-17
+70,TOY-00070,Kestrel Deluxe Art Kit,Toys,58.05,26.76,178,3.9,2025-03-07
+71,CLO-00071,Acme Lite Flannel Shirt,Clothing,55.18,38.24,419,3.4,2025-11-23
+72,CLO-00072,Northwind Essential Hoodie,Clothing,51.22,25.86,131,4.4,2025-07-07
+73,HOM-00073,Nimbus Essential Blender,Home & Kitchen,106.16,42.26,315,4.4,2025-05-16
+74,HOM-00074,Northwind Everyday Non-Stick Pan,Home & Kitchen,97.95,36.08,211,3.3,2024-01-25
+75,ELE-00075,Lumen Classic Noise-Cancelling Headphones,Electronics,292.59,118.58,334,4.8,2024-01-18
+76,SPO-00076,Brightway Essential Jump Rope,Sports & Outdoors,61.80,22.91,393,2.7,2023-07-01
+77,HOM-00077,Nimbus Classic Cutting Board,Home & Kitchen,66.92,43.04,478,4.8,2024-06-27
+78,TOY-00078,Summit Eco Art Kit,Toys,76.31,51.44,448,2.6,2025-01-15
+79,BEA-00079,Harbor Pro Shampoo,Beauty,28.90,20.12,278,3.8,2025-12-18
+80,TOY-00080,Nimbus Ultra Plush Bear,Toys,21.69,8.45,83,4.3,2023-01-30
